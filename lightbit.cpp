@@ -1,24 +1,20 @@
 #include "pxt.h"
 
 using namespace pxt;
-namespace gamerbit {
-    bool initialized = false;
+namespace lightbit {
+    
+	//%
+    uint16_t getDegC(int16_t tempADCVal) {
 
+        return ((tempADCVal*3.3/1023)-0.5) *100.0;
+    }
+
+	/*
+    * Calculates the temeprature in degrees F based on the ADC value passed in.
+    */
     //%
-    void init() {
-        if (initialized) return;
+    uint16_t getDegF(int16_t tempADCVal) {
 
-    // mount buttons on the pins with a pullup mode
-    // TODO: fix this issue in the DAL itself
-#define ALLOC_PIN_BUTTON(id) new MicroBitButton(getPin(id)->name, id, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
-    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P0)
-    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P1)
-    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P2)
-    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P8)
-    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P12)
-    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P16)
-#undef ALLOC_PIN_BUTTON
-
-        initialized = true;
+        return (((tempADCVal*3.3/1023)-0.5) *100.0)*(9.0/5.0)+32.0;
     }
 }

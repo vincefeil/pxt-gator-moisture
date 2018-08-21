@@ -1,5 +1,5 @@
 {
-    "name": "gamerbit",
+    "name": "lightbit",
     "version": "0.0.1",
     "description": "Sparkfun light:bit blocks",
     "license": "MIT",
@@ -12,9 +12,6 @@
         "lightbit.ts",
         "shims.d.ts",
         "enums.d.ts"
-    ],
-    "testFiles": [
-        "test.ts"
     ],
     "public": true
 }
