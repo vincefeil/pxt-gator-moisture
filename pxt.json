@@ -1,17 +1,18 @@
 {
-    "name": "lightbit",
-    "version": "0.0.1",
-    "description": "Sparkfun light:bit blocks",
+    "name": "tmp36",
+    "version": "0.0.5",
+    "description": "SparkFun TMP36 Temperature Sensor",
     "license": "MIT",
     "dependencies": {
         "core": "*"
     },
     "files": [
         "README.md",
-        "lightbit.cpp",
-        "lightbit.ts",
+        "tmp36.ts",
+        "tmp36.cpp",
         "shims.d.ts",
         "enums.d.ts"
     ],
+    "testFiles": [],
     "public": true
 }

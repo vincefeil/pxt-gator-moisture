@@ -1,21 +1,22 @@
-# light:bit
+# tmp36
 
-![SparkFun Light:bit](https://raw.githubusercontent.com/sparkfun/pxt-gamer-bit/master/icon.png)  
+TODO: To use this package, go to https://makecode.microbit.org, click ``Add package`` and search for **tmp36**.
 
-The package adds support for the **gamer:bit** add-on board from SparkFun.
+## Usage
 
-To use this package, go to https://makecode.microbit.org, click ``Add package`` and search for **lightbit**.
+The package adds support for the **tmp36** sensor used in the SparkFun Inventor's Kit.
 
-### ~ hint
+	
 
-This package is still under development and subject to changes.
+### Micro:bit Pins Used 
+see guide
 
-## License
 
-MIT
 
 ## Supported targets
 
 * for PXT/microbit
 
-
+```package
+tmp36=github:sparkfun/pxt-tmp36
+```
