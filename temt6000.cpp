@@ -21,21 +21,12 @@
 using namespace pxt;
 
 namespace temt6000 {
-    /*
-    * Calculates the temeprature in degrees C based on the ADC value passed in.
-    */
-    //%
-    uint16_t getDegC(int16_t tempADCVal) {
-
-        return ((tempADCVal*3.3/1023)-0.5) *100.0;
-    }
-
 	/*
-    * Calculates the temeprature in degrees F based on the ADC value passed in.
+    * Converts the light value into an estimation of lux
     */
     //%
-    uint16_t getDegF(int16_t tempADCVal) {
+    uint16_t getLight(int16_t lightADCVal) {
 
-        return (((tempADCVal*3.3/1023)-0.5) *100.0)*(9.0/5.0)+32.0;
+        return (((lightADCVal*3.3/1023)-0.5) *100.0)*(9.0/5.0)+32.0;
     }
 }

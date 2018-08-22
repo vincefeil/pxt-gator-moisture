@@ -20,8 +20,7 @@
 
  enum temt6000Type{
 	 F=1,
-	 C=2,
-	 adcVal=3,
+	 adcVal=2,
  }
 
 
@@ -29,36 +28,27 @@
 //% color=#f44242 icon="\u26C8"
 namespace temt6000 {
 
-    // Functions for reading temperature from the TMP36 in degrees C or F
+    // Functions for reading light from the TEMT6000
 
     /**
     * Reads the number
     */
-    //% weight=30 blockId="temt6000_temp" block="Get Temperature on pin %pin | in %tmp36Type"
+    //% weight=30 blockId="temt6000_light" block="Get light value on %pin | in %temt6000Type"
     export function temp(pin: AnalogPin, type: temt6000Type): number{
-      let tempADCVal = pins.analogReadPin(pin)
+      let lightADCVal = pins.analogReadPin(pin)
       switch(type){
-        case temt6000Type.F: return getDegF(tempADCVal)
-        case temt6000Type.C: return getDegC(tempADCVal)
-        case temt6000Type.adcVal: return tempADCVal
+        case temt6000Type.F: return getDegF(lightADCVal)
+        case temt6000Type.C: return getDegC(lightADCVal)
+        case temt6000Type.adcVal: return lightADCVal
         default: return -11111111
       }
     }
 
 	/**
-     * Function used for simulator, actual implementation is in tmp36.cpp
+     * Function used for simulator, actual implementation is in temt6000.cpp
      */
-    //% shim=tmp36::getDegF
-    function getDegF(tempADCVal: number) {
-        // Fake function for simulator
-        return 0
-    }
-
-	/**
-     * Function used for simulator, actual implementation is in tmp36.cpp
-     */
-    //% shim=tmp36::getDegC
-    function getDegC(tempADCVal: number) {
+    //% shim=temt6000::getLight
+    function getLight(lightADCVal: number) {
         // Fake function for simulator
         return 0
     }
