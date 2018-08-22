@@ -18,7 +18,7 @@
  * Functions to operate the TMP36 sensor
  */
 
- enum tmp36Type{
+ enum temt6000Type{
 	 F=1,
 	 C=2,
 	 adcVal=3,
@@ -27,20 +27,20 @@
 
 
 //% color=#f44242 icon="\u26C8"
-namespace tmp36 {
+namespace temt6000 {
 
     // Functions for reading temperature from the TMP36 in degrees C or F
 
     /**
     * Reads the number
     */
-    //% weight=30 blockId="tmp36_temp" block="Get Temperature on pin %pin | in %tmp36Type"
-    export function temp(pin: AnalogPin, type: tmp36Type): number{
+    //% weight=30 blockId="temt6000_temp" block="Get Temperature on pin %pin | in %tmp36Type"
+    export function temp(pin: AnalogPin, type: temt6000Type): number{
       let tempADCVal = pins.analogReadPin(pin)
       switch(type){
-        case tmp36Type.F: return getDegF(tempADCVal)
-        case tmp36Type.C: return getDegC(tempADCVal)
-        case tmp36Type.adcVal: return tempADCVal
+        case temt6000Type.F: return getDegF(tempADCVal)
+        case temt6000Type.C: return getDegC(tempADCVal)
+        case temt6000Type.adcVal: return tempADCVal
         default: return -11111111
       }
     }
