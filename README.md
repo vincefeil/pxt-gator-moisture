@@ -1,10 +1,10 @@
-# temt6000
+# tmp36
 
-TODO: To use this package, go to https://makecode.microbit.org, click ``Add package`` and search for **temt6000**.
+TODO: To use this package, go to https://makecode.microbit.org, click ``Add package`` and search for **tmp36**.
 
 ## Usage
 
-The package adds support for the **temt6000** sensor.
+The package adds support for the **tmp36** sensor used in the SparkFun Inventor's Kit.
 
 	
 
@@ -18,5 +18,5 @@ see guide
 * for PXT/microbit
 
 ```package
-temt6000=github:sparkfun/pxt-light-bit
+tmp36=github:sparkfun/pxt-tmp36
 ```
