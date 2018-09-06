@@ -19,7 +19,7 @@
  */
 
  enum temt6000Type{
-	 F=1,
+	 Lux=1,
 	 adcVal=2,
  }
 
@@ -29,6 +29,7 @@
 namespace temt6000 {
 
     // Functions for reading light from the TEMT6000
+
     /**
     * Reads the number
     */
@@ -36,7 +37,7 @@ namespace temt6000 {
     export function temp(pin: AnalogPin, type: temt6000Type): number{
       let lightADCVal = pins.analogReadPin(pin)
       switch(type){
-        case temt6000Type.F: return getLight(lightADCVal)
+        case temt6000Type.Lux: return getLight(lightADCVal)
         case temt6000Type.adcVal: return lightADCVal
         default: return -11111111
       }

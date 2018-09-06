@@ -28,5 +28,5 @@ namespace temt6000 {
     uint16_t getLight(int16_t lightADCVal) {
 
         return (((lightADCVal*3.3/1023)-0.5) *100.0)*(9.0/5.0)+32.0;
-    }
+    }*/
 }
