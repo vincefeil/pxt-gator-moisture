@@ -19,7 +19,7 @@
  */
 
  enum temt6000Type{
-	 C=1,
+	 Lux=1,
 	 adcVal=2,
  }
 
@@ -28,27 +28,26 @@
 //% color=#f44242 icon="\u26C8"
 namespace temt6000 {
 
-    // Functions for reading temperature from the temt6000 in degrees C or F
+    // Functions for reading light from the temt6000 in lux or straight adv value
 
     /**
     * Reads the number
     */
-    //% weight=30 blockId="temt6000_temp" block="Get Temperature on pin %pin | in %temt6000Type"
+    //% weight=30 blockId="temt6000_temp" block="Get light on pin %pin | in %temt6000Type"
     export function temp(pin: AnalogPin, type: temt6000Type): number{
-      let tempADCVal = pins.analogReadPin(pin)
+      let ADCVal = pins.analogReadPin(pin)
       switch(type){
-        case temt6000Type.C: return getDegC(tempADCVal)
-        case temt6000Type.adcVal: return tempADCVal
+        case temt6000Type.Lux: return getLux(ADCVal)
+        case temt6000Type.adcVal: return ADCVal
         default: return -11111111
       }
     }
 
-
 	/**
      * Function used for simulator, actual implementation is in temt6000.cpp
      */
-    //% shim=temt6000::getDegC
-    function getDegC(tempADCVal: number) {
+    //% shim=temt6000::getLux
+    function getLux(ADCVal: number) {
         // Fake function for simulator
         return 0
     }

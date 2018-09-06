@@ -22,12 +22,12 @@ using namespace pxt;
 
 namespace temt6000 {
     /*
-    * Calculates the temeprature in degrees C based on the ADC value passed in.
+    * Calculates the light in Lux based on the ADC value passed in. 1 step in adcVal is equal to .488 uA at 5V
     */
     //%
-    uint16_t getDegC(int16_t tempADCVal) {
+    uint16_t getLux(int16_t ADCVal) {
 
-        return ((tempADCVal*3.3/1023)-0.5) *100.0;
+        return ADCVal * .976;
     }
 
 }
