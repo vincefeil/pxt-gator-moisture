@@ -1,6 +1,6 @@
 {
-    "name": "tmp36",
-    "version": "0.0.5",
+    "name": "temt36",
+    "version": "0.0.1",
     "description": "SparkFun TMP36 Temperature Sensor",
     "license": "MIT",
     "dependencies": {
@@ -8,8 +8,8 @@
     },
     "files": [
         "README.md",
-        "tmp36.ts",
-        "tmp36.cpp",
+        "temt6000.ts",
+        "temt6000.cpp",
         "shims.d.ts",
         "enums.d.ts"
     ],
