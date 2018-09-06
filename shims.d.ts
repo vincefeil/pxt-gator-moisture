@@ -2,13 +2,13 @@
 
 
     /**
-     * Mary West @ SparkFun Electronics
-     * Juuly 3, 2017
-     * https://github.com/sparkfun/pxt-tmp36
+     * Andy England @ SparkFun Electronics
+     * September 6, 2018
+     * https://github.com/sparkfun/pxt-light-bit
      *
      * Development environment specifics:
      * Written in Microsoft PXT
-     * Tested with a SparkFun TMP36 sensor and micro:bit
+     * Tested with a SparkFun temt6000 sensor and micro:bit
      *
      * This code is released under the [MIT License](http://opensource.org/licenses/MIT).
      * Please review the LICENSE.md file included with this example. If you have any questions
