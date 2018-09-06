@@ -19,7 +19,7 @@
  */
 
  enum temt6000Type{
-	 F=1,
+	 C=1,
 	 adcVal=2,
  }
 
@@ -37,7 +37,7 @@ namespace temt6000 {
     export function temp(pin: AnalogPin, type: temt6000Type): number{
       let tempADCVal = pins.analogReadPin(pin)
       switch(type){
-        case temt6000Type.F: return getDegF(tempADCVal)
+        case temt6000Type.C: return getDegC(tempADCVal)
         case temt6000Type.adcVal: return tempADCVal
         default: return -11111111
       }
