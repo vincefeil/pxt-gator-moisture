@@ -1,7 +1,7 @@
 {
-    "name": "temt6000",
+    "name": "temt36",
     "version": "0.0.1",
-    "description": "SparkFun TEMT6000 Temperature Sensor",
+    "description": "SparkFun TMP36 Temperature Sensor",
     "license": "MIT",
     "dependencies": {
         "core": "*"
