@@ -16,7 +16,7 @@
      * Distributed as-is; no warranty is given.
      */
 
-declare namespace tmp36 {
+declare namespace temt6000 {
 }
 
 // Auto-generated. Do not edit. Really.
