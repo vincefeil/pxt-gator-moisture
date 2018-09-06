@@ -20,8 +20,7 @@
 
  enum temt6000Type{
 	 F=1,
-	 C=2,
-	 adcVal=3,
+	 adcVal=2,
  }
 
 
@@ -39,20 +38,11 @@ namespace temt6000 {
       let tempADCVal = pins.analogReadPin(pin)
       switch(type){
         case temt6000Type.F: return getDegF(tempADCVal)
-        case temt6000Type.C: return getDegC(tempADCVal)
         case temt6000Type.adcVal: return tempADCVal
         default: return -11111111
       }
     }
 
-	/**
-     * Function used for simulator, actual implementation is in temt6000.cpp
-     */
-    //% shim=temt6000::getDegF
-    function getDegF(tempADCVal: number) {
-        // Fake function for simulator
-        return 0
-    }
 
 	/**
      * Function used for simulator, actual implementation is in temt6000.cpp
