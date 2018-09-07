@@ -25,7 +25,7 @@
 
 
 
-//% color=#f44242 icon="\f185"
+//% color=#f44242 icon="\uf185"
 namespace temt6000 {
 
     // Functions for reading light from the temt6000 in lux or straight adv value
