@@ -5,7 +5,7 @@
 
 * Development environment specifics:
 * Written in Microsoft Makecode
-* Tested with a SparkFun temt6000 sensor and micro:bit
+* Tested with a SparkFun gatorlight sensor and micro:bit
 *
 * This code is released under the [MIT License](http://opensource.org/licenses/MIT).
 * Please review the LICENSE.md file included with this example. If you have any questions
@@ -15,10 +15,10 @@
 
 
 /**
- * Functions to operate the temt6000 sensor
+ * Functions to operate the gatorlight sensor
  */
 
- enum temt6000Type{
+ enum gatorlightType{
 	 Lux=1,
 	 adcVal=2,
  }
@@ -26,27 +26,27 @@
 
 
 //% color=#f44242 icon="\uf185"
-namespace temt6000 {
+namespace gatorlight {
 
-    // Functions for reading light from the temt6000 in lux or straight adv value
+    // Functions for reading light from the gatorlight in lux or straight adv value
 
     /**
     * Reads the number
     */
-    //% weight=30 blockId="temt6000_temp" block="Get light on pin %pin | in %temt6000Type"
-    export function temp(pin: AnalogPin, type: temt6000Type): number{
+    //% weight=30 blockId="gatorlight_light" block="Get light on pin %pin | in %gatorlightType"
+    export function light(pin: AnalogPin, type: gatorlightType): number{
       let ADCVal = pins.analogReadPin(pin)
       switch(type){
-        case temt6000Type.Lux: return getLux(ADCVal)
-        case temt6000Type.adcVal: return ADCVal
+        case gatorlightType.Lux: return getLux(ADCVal)
+        case gatorlightType.adcVal: return ADCVal
         default: return -11111111
       }
     }
 
 	/**
-     * Function used for simulator, actual implementation is in temt6000.cpp
+     * Function used for simulator, actual implementation is in gatorlight.cpp
      */
-    //% shim=temt6000::getLux
+    //% shim=gatorlight::getLux
     function getLux(ADCVal: number) {
         // Fake function for simulator
         return 0

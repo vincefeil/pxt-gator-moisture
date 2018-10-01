@@ -16,7 +16,7 @@
      * Distributed as-is; no warranty is given.
      */
 
-declare namespace temt6000 {
+declare namespace gatorlight {
 }
 
 // Auto-generated. Do not edit. Really.

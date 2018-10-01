@@ -1,5 +1,5 @@
 // Auto-generated. Do not edit.
-declare namespace temt6000 {
+declare namespace gatorlight {
 }
 
 // Auto-generated. Do not edit. Really.
