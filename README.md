@@ -1,17 +1,16 @@
 # gator:light Light Sensor
 
-TODO: To use this package, go to https://makecode.microbit.org, click ``Add package`` and search for **gator:light**.
+![SparkFun gator:light](https://raw.githubusercontent.com/sparkfun/pxt-gator-light/master/icon.png)  
+
+To use this package, go to https://makecode.microbit.org, click ``Add package`` and search for **gator-light**.
 
 ## Usage
 
-The package adds support for the **gatorlight** light sensor.
+The package adds support for the **gator:light** light sensor.
 
-	
+## License
 
-### Micro:bit Pins Used 
-see guide
-
-
+MIT
 
 ## Supported targets
 
