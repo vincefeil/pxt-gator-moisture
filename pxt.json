@@ -1,6 +1,6 @@
 {
     "name": "gatormoisture",
-    "version": "0.0.3",
+    "version": "0.0.1",
     "description": "SparkFun gator:moisture Temperature Sensor",
     "license": "MIT",
     "dependencies": {
